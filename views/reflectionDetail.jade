@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  each ref in record.Reflection.blocks
+    if ref.type == 'image'
+        img(src='/images/'+ref.imageName class="thumpNail")
+    else if ref.type == 'header'
+        h2= ref.data.text
+    else if ref.type == 'paragraph'
+        p= ref.data.text
+    else if ref.type == 'list' && ref.data.style == "ordered"
+      ul
+        each elem in ref.data.items
+         li= elem
+    else if ref.type == 'list' && ref.data.style == "unordered"
+      ol
+        each elem in ref.data.items
+         li= elem
+
+
+
+ 
+    
+
+ 

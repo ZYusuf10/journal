@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@2.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/raw"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+  body(id="newBitGet")
+    block content
+      div(id="editorjs" style="border-style: solid;")
+      button(onclick="save();") save
+      script(src="/javascripts/editor.js")
+      
+     

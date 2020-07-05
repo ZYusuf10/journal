@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h2 !{title}
+  form(method='POST' action='addEmailToSub')
+            input(type='email' name='Email' placeholder='Enter Email')
+            button.btn.btn-primary(type='submit' id="submit") Subscribe
+  if !searched
+    div(id="jArticlesContainer")
+        each val in rList
+          div(class="jArticle")
+            each ref in val.Reflection.blocks
+                if ref.type == 'image'
+                  img(src='/images/'+ref.imageName class="thumpNail")
+                else if ref.type == 'header'
+                  h2= ref.data.text
+            a(href=val.url) read more
+  
+
+
+
+
+ 

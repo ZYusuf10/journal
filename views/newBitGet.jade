@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css') 
+    meta(name="viewport" content="width= device-width, initial-scale=1")
+  body(id="newBitGet")
+    block content
+      div(id="mainContainerContact" class="mainContainer")
+        div(class="section" id="contactInfo")
+          form(method='POST' action='')
+            h3 Get in to Post
+            input(type="text" name="username" placeholder="username" id="name") 
+            br
+            input(type="password" name="password" placeholder="password" id="password")
+            br
+            button.btn.btn-primary(type='submit' id="submit" onclick="recieved()") Send
+          script(type='text/javascript' src='/javascripts/next.js')
+    script(type='text/javascript' src='/javascripts/next.js')

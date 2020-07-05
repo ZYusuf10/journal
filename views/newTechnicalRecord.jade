@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css') 
+    meta(name="viewport" content="width= device-width, initial-scale=1")
+  body(id="newBitGet")
+    block content
+      div(id="mainContainerContact" class="mainContainer")
+        div(class="section" id="contactInfo")
+          form(method='POST' enctype="multipart/form-data" action='newTechnicalRecord')
+            h3 Get in to Post
+            input(type="text" name="Title" placeholder="Title" id="Title") 
+            
+            input(type="hidden" name="ImageName" placeholder="ImageName" id="ImageName")
+            
+            input(type="text" name="Caption" placeholder="Caption" id="Caption")
+            
+            input(type="file" name="image" placeholder="image" id="image" class="fileI")
+        
+            textarea(name="Body" cols="80" rows="25" placeholder="Body")
+            button.btn.btn-primary(type='submit' id="submit" onclick="recieved()") Record
+            ul
+              li incapsulate # in code
+              li - is for list also
+
+          script(type='text/javascript' src='/javascripts/next.js')
+    script(type='text/javascript' src='/javascripts/next.js')

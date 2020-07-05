@@ -1,0 +1,14 @@
+extends layout
+
+block content
+ script(type='text/javascript' src='/javascripts/parser.js')
+ h2= record.Title
+ img(src='/images/'+record.ImageName onload='parseAndDisplay('+JSON.stringify(record.Body)+');')
+ p= record.Caption
+ div(id='techDetContainer')
+
+
+ 
+    
+
+ 
