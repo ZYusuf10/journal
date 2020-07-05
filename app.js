@@ -48,8 +48,8 @@ app.use(function(err, req, res, next) {
 //serve static data
 app.use(express.static('public'));
 
-app.listen(80, function(){
-  console.log('journal listening on 80')
+app.listen(8081, function(){
+  console.log('journal listening on 8081')
 });
 
 module.exports = app;
